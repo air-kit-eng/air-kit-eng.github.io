@@ -1,6 +1,7 @@
 .methodology {
   width: min(1180px, 100%);
   margin-top: 28px;
+  margin-inline: auto;
   padding: 36px 0 0;
 }
 
