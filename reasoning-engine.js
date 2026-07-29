@@ -51,7 +51,10 @@
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
 
-  const resizeObserver = new ResizeObserver(resize);
+  const resizeObserver = new ResizeObserver(() => {
+    resize();
+    if (prefersReducedMotion) drawStaticFrame();
+  });
   resizeObserver.observe(container);
   resize();
 
@@ -361,7 +364,23 @@
 
   if (prefersReducedMotion) {
     resize();
-    drawStaticFrame();
+    if (width > 0 && height > 0) {
+      drawStaticFrame();
+    } else {
+      // Layout hadn't settled yet (e.g. aspect-ratio/webfont timing). Retry
+      // on the next few frames until we get a real, non-zero size.
+      let attempts = 0;
+      const tryDraw = () => {
+        attempts++;
+        resize();
+        if (width > 0 && height > 0) {
+          drawStaticFrame();
+        } else if (attempts < 30) {
+          requestAnimationFrame(tryDraw);
+        }
+      };
+      requestAnimationFrame(tryDraw);
+    }
   } else {
     const observer = new IntersectionObserver(
       (entries) => {
