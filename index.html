@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AIR-Kit is a local, frontier-class AI inference engine for incident response. Pre-deployed on your infrastructure, it stays online when cloud AI is redacted, preserving investigation, replay, and team coordination without data leaving the perimeter."
+    />
+    <meta property="og:title" content="AIR-Kit - Offline AI Incident Response" />
+    <meta
+      property="og:description"
+      content="AIR-Kit provides persistent autonomous investigation with local control and operational clarity."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <title>AIR-Kit - Offline AI Incident Response</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-row">
+          <a class="brand" href="#top" aria-label="AIR-Kit home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 100 100" fill="none">
+                <path d="M50 4 92 28v48L50 100 8 76V28z" stroke="currentColor" stroke-width="7" stroke-linejoin="round" />
+                <path d="M28 74 50 26l22 48" stroke="currentColor" stroke-width="7" stroke-linejoin="round" />
+                <path d="M50 46l11 26H39z" fill="var(--brand-indigo)" />
+              </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-name">AIR-KIT</span>
+              <span class="brand-tag">AI INCIDENT RESPONSE KIT</span>
+            </span>
+          </a>
+          <nav class="top-nav" aria-label="Main navigation">
+            <a href="#capabilities">Capabilities</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#evidence">Evidence</a>
+            <a href="#deployment">Deployment</a>
+            <a href="https://github.com/AIR-Kit-AI/AIR-Kit" target="_blank" rel="noreferrer">Code</a>
+          </nav>
+          <a class="button button-ghost" href="#deployment">Request access</a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero hero-section">
+          <div class="hero-grid container">
+            <div class="hero-copy reveal">
+              <p class="eyebrow-pale">AI Incident Response Kit</p>
+              <h1>Detection is not understanding.</h1>
+              <p class="hero-lead">
+                Detection is not understanding. AIR-Kit provides persistent autonomous investigation
+                with local control and operational clarity.
+              </p>
+              <p class="hero-body">
+                AIR-Kit is a local, frontier-class AI inference engine for incident response. When a
+                breach locks you out of cloud-based AI — and responders are denied access because the
+                vendor cannot distinguish attackers from defenders — AIR-Kit keeps running on your
+                hardware, wired into your telemetry and incident reporting, so you can still
+                investigate, understand, and act.
+              </p>
+              <div class="hero-actions">
+                <a class="button" href="#architecture">See the architecture</a>
+                <a class="button button-secondary" href="#evidence">Evidence model</a>
+              </div>
+            </div>
+            <div class="hero-art reveal" aria-hidden="true" data-network-diagram></div>
+          </div>
+        </section>
+
+        <section id="capabilities" class="section section-surface">
+          <div class="container">
+            <p class="eyebrow rule-accent">Capabilities</p>
+            <div class="card-grid">
+              <article class="card reveal">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <path d="M10 42c6-8 13-14 22-18 8-4 13-5 22-6" stroke="currentColor" stroke-width="3" />
+                    <path d="M12 46h40" stroke="currentColor" stroke-width="3" />
+                    <circle cx="16" cy="46" r="4" fill="currentColor" />
+                    <circle cx="48" cy="46" r="4" fill="currentColor" />
+                  </svg>
+                </div>
+                <h2>Investigate</h2>
+                <p>
+                  Read from your existing EDR, SIEM, identity, and cloud telemetry. Correlates
+                  evidence even when external services are unreachable.
+                </p>
+              </article>
+              <article class="card reveal">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <rect x="10" y="14" width="44" height="36" rx="6" stroke="currentColor" stroke-width="3" />
+                    <path d="M19 24h26" stroke="currentColor" stroke-width="3" />
+                    <path d="M19 34h12" stroke="currentColor" stroke-width="3" />
+                    <path d="M19 42h18" stroke="currentColor" stroke-width="3" />
+                  </svg>
+                </div>
+                <h2>Understand</h2>
+                <p>
+                  A frontier-class model reasons over your data, ranks hypotheses, and explains how it
+                  reached each conclusion.
+                </p>
+              </article>
+              <article class="card reveal">
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <path d="M12 48c6-12 10-20 20-24 7-3 18-7 20-12" stroke="currentColor" stroke-width="3" />
+                    <path d="M18 48h28" stroke="currentColor" stroke-width="3" />
+                    <circle cx="18" cy="48" r="4" fill="currentColor" />
+                    <circle cx="46" cy="48" r="4" fill="currentColor" />
+                  </svg>
+                </div>
+                <h2>Respond</h2>
+                <p>
+                  Evidence-backed recommendations for containment, eradication, and recovery — with
+                  full provenance for incident reports.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="evidence" class="section">
+          <div class="container evidence-grid">
+            <div class="reveal">
+              <p class="eyebrow rule-accent">Evidence flow</p>
+              <h2>BYOT. Built on the signals you already generate.</h2>
+              <p class="section-copy">
+                AIR-Kit is bring-your-own-telemetry. It reads from your existing EDR, SIEM, identity,
+                and cloud audit sources, normalizes events into a local graph, and runs inference
+                beside it. Every hypothesis, every recommended action, and every incident report
+                traces back to the source evidence.
+              </p>
+              <div class="timeline" aria-label="Evidence processing timeline">
+                <div class="timeline-step">
+                  <span>01</span>
+                  <strong>Ingest</strong>
+                </div>
+                <div class="timeline-step">
+                  <span>02</span>
+                  <strong>Correlate</strong>
+                </div>
+                <div class="timeline-step">
+                  <span>03</span>
+                  <strong>Reason</strong>
+                </div>
+                <div class="timeline-step">
+                  <span>04</span>
+                  <strong>Report</strong>
+                </div>
+              </div>
+            </div>
+            <div class="diagram-panel reveal">
+              <svg viewBox="0 0 520 320" class="main-diagram" role="img" aria-label="Evidence processing diagram">
+                <rect x="48" y="40" width="140" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.14)" />
+                <rect x="250" y="40" width="140" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.14)" />
+                <rect x="190" y="180" width="140" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.14)" />
+                <path d="M188 80h62" stroke="var(--brand-indigo)" stroke-width="3" stroke-linecap="round" />
+                <path d="M390 80h52" stroke="var(--brand-indigo)" stroke-width="3" stroke-linecap="round" />
+                <path d="M260 120v40" stroke="var(--brand-indigo)" stroke-width="3" stroke-linecap="round" />
+                <path d="M260 220h20" stroke="var(--brand-indigo)" stroke-width="3" stroke-linecap="round" />
+                <circle cx="448" cy="80" r="7" fill="var(--brand-cyan)" />
+                <circle cx="260" cy="220" r="7" fill="var(--brand-cyan)" />
+                <text x="78" y="85" fill="currentColor" font-size="18">Telemetry</text>
+                <text x="276" y="85" fill="currentColor" font-size="18">Graph</text>
+                <text x="216" y="225" fill="currentColor" font-size="18">Response</text>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section id="architecture" class="section section-surface">
+          <div class="container architecture-grid">
+            <div class="diagram-panel reveal">
+              <svg viewBox="0 0 520 320" class="main-diagram" role="img" aria-label="AIR-Kit architecture diagram">
+                <rect x="42" y="70" width="140" height="74" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)" />
+                <rect x="190" y="70" width="140" height="74" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)" />
+                <rect x="338" y="70" width="140" height="74" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)" />
+                <rect x="190" y="198" width="140" height="74" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)" />
+                <path d="M182 107h8" stroke="var(--brand-indigo)" stroke-width="3" stroke-linecap="round" />
+                <path d="M330 107h8" stroke="var(--brand-indigo)" stroke-width="3" stroke-linecap="round" />
+                <path d="M260 144v54" stroke="var(--brand-indigo)" stroke-width="3" stroke-linecap="round" />
+                <circle cx="260" cy="107" r="7" fill="var(--brand-cyan)" />
+                <text x="70" y="112" fill="currentColor" font-size="18">Telemetry</text>
+                <text x="214" y="112" fill="currentColor" font-size="18">Inference</text>
+                <text x="360" y="112" fill="currentColor" font-size="18">Casework</text>
+                <text x="218" y="239" fill="currentColor" font-size="18">Hardware</text>
+              </svg>
+            </div>
+            <div class="reveal">
+              <p class="eyebrow rule-accent">Architecture</p>
+              <h2>Local, resilient, and purpose-built for continuity.</h2>
+              <p class="section-copy">
+                The reasoning engine runs on hardware you control. Pre-deploy it before the incident,
+                wire it to your EDR, SIEM, identity, and cloud audit sources, and it keeps operating
+                when cloud AI providers are cut off, redacted, or unable to tell attackers from defenders.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="deployment" class="section">
+          <div class="container">
+            <p class="eyebrow rule-accent">Deployment</p>
+            <div class="deployment-grid">
+              <article class="deploy-card reveal">
+                <span class="deploy-kicker">01</span>
+                <h3>Air-gapped</h3>
+                <p>
+                  No network dependency. No cloud callback. Models and indexes live on hardware you
+                  control, ready when external AI is unreachable.
+                </p>
+              </article>
+              <article class="deploy-card reveal">
+                <span class="deploy-kicker">02</span>
+                <h3>Self-hosted</h3>
+                <p>
+                  Single binary or container. Wired into your existing telemetry, incident reporting,
+                  and response workflows.
+                </p>
+              </article>
+              <article class="deploy-card reveal">
+                <span class="deploy-kicker">03</span>
+                <h3>Auditable</h3>
+                <p>
+                  Every hypothesis, experiment, and action is written to an append-only case record.
+                  Full replay and team simulation support.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <div class="footer-brand">
+            <svg viewBox="0 0 100 100" fill="none" aria-hidden="true">
+              <path d="M50 4 92 28v48L50 100 8 76V28z" stroke="currentColor" stroke-width="7" stroke-linejoin="round" />
+              <path d="M28 74 50 26l22 48" stroke="currentColor" stroke-width="7" stroke-linejoin="round" />
+              <path d="M50 46l11 26H39z" fill="var(--brand-indigo)" />
+            </svg>
+            <span>Offline inference. Operational continuity. When the cloud is redacted, AIR-Kit is not.</span>
+          </div>
+          <span class="footer-copyright">© <span id="year"></span> AIR-Kit</span>
+        </div>
+      </footer>
+    </div>
+    <script src="./network-diagram.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
