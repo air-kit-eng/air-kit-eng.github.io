@@ -406,9 +406,10 @@ a {
 
 .footer-row {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.6rem;
   flex-wrap: wrap;
   color: var(--muted-foreground);
   font-size: 0.78rem;
