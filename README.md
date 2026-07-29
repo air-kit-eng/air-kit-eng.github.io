@@ -146,7 +146,7 @@
           <span class="pill">Local-first investigation engine</span>
           <h1>Investigate. Understand. Respond.</h1>
           <p class="lede">
-            This lightweight landing page pulls the animated network graphic in as a standalone component through a plain JavaScript include, making it easy to reuse in other static contexts.
+            AIR-Kit is a local, frontier-class AI inference engine for incident response. When a breach locks you out of cloud-based AI - and responders are denied access because the vendor cannot distinguish attackers from defenders - AIR-Kit keeps running on your hardware, wired into your telemetry and incident reporting, so you can still investigate, understand, and act.
           </p>
           <div class="actions">
             <button class="btn btn-primary">Start Investigation</button>
