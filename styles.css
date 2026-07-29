@@ -197,6 +197,7 @@ a {
   line-height: 0.98;
   letter-spacing: -0.03em;
   max-width: 12ch;
+  color: var(--brand-indigo);
 }
 
 .hero-lead {
