@@ -143,3 +143,7 @@
   display: block;
 }
 
+#deployment-title {
+  white-space: nowrap;
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Dynamically shrinks to fit on narrower viewports */
+}
