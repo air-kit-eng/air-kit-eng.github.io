@@ -228,7 +228,7 @@ a {
 }
 
 .hero-art[data-network-diagram] {
-  width: min(22rem, 70vw);
+  width: min(30rem, 78vw);
   aspect-ratio: 1 / 1;
 }
 
