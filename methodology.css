@@ -1,4 +1,6 @@
 .methodology {
+  --methodology-icon-base: #5d7cff;
+  --methodology-icon-hover: #5b4cff;
   width: min(1180px, 100%);
   margin-top: 28px;
   margin-inline: auto;
@@ -45,7 +47,7 @@
   border-radius: 4px;
   background: rgba(16, 20, 38, 0.78);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.24);
-  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  transition: box-shadow 220ms ease;
   overflow: hidden;
 }
 
@@ -54,20 +56,20 @@
   position: absolute;
   inset: 0 0 auto 0;
   height: 2px;
-  background: var(--primary);
+  background: linear-gradient(90deg, transparent 0%, rgba(91, 76, 255, 0.95) 50%, transparent 100%);
   transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 220ms ease;
+  transform-origin: center;
+  transition: transform 220ms ease, opacity 220ms ease;
+  opacity: 0;
 }
 
 .methodology__card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(91, 76, 255, 0.45);
-  box-shadow: 0 24px 44px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.3);
 }
 
 .methodology__card:hover::before {
   transform: scaleX(1);
+  opacity: 1;
 }
 
 .methodology__icon {
@@ -78,7 +80,8 @@
   width: 48px;
   height: 48px;
   margin-bottom: 24px;
-  color: var(--accent);
+  color: var(--methodology-icon-base);
+  transition: color 220ms ease;
 }
 
 .methodology__icon::before {
@@ -88,6 +91,10 @@
   border: 1px solid currentColor;
   opacity: 0.18;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.methodology__card:hover .methodology__icon {
+  color: var(--methodology-icon-hover);
 }
 
 .methodology__icon svg {
