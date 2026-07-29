@@ -435,6 +435,13 @@ a {
   height: 1.45rem;
 }
 
+.footer-github a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;  
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(14px);
