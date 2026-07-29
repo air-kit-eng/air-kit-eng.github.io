@@ -21,6 +21,7 @@
 .cta-section__content {
   position: relative;
   z-index: 1;
+  margin: 0 auto;
   max-width: 720px;
   display: flex;
   flex-direction: column;
