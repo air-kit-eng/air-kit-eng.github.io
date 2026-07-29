@@ -130,3 +130,16 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+[data-reasoning-engine] {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-reasoning-engine] canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
