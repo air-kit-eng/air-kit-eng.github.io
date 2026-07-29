@@ -1,7 +1,6 @@
 .methodology {
   width: min(1180px, 100%);
   margin-top: 28px;
-  margin-inline: auto;
   padding: 36px 0 0;
 }
 
@@ -38,12 +37,26 @@
 
 .methodology__card {
   position: relative;
-  padding: 24px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
-  background: linear-gradient(180deg, rgba(16, 20, 38, 0.95), rgba(10, 14, 28, 0.92));
+  display: flex;
+  flex-direction: column;
+  padding: 28px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  background: rgba(16, 20, 38, 0.78);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.24);
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  overflow: hidden;
+}
+
+.methodology__card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 220ms ease;
 }
 
 .methodology__card:hover {
@@ -52,28 +65,33 @@
   box-shadow: 0 24px 44px rgba(0, 0, 0, 0.28);
 }
 
-.methodology__card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(135deg, rgba(116, 244, 226, 0.08), transparent);
-  pointer-events: none;
+.methodology__card:hover::before {
+  transform: scaleX(1);
 }
 
 .methodology__icon {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
-  margin-bottom: 18px;
-  border: 1px solid rgba(116, 244, 226, 0.2);
-  border-radius: 999px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
   color: var(--accent);
-  font-size: 0.84rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+}
+
+.methodology__icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid currentColor;
+  opacity: 0.18;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.methodology__icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .methodology__card h3 {
